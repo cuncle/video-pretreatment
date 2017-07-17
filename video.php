@@ -11,12 +11,13 @@ $data = array();
 $data['service'] = $bucket;
 $data['accept'] = 'json';
 $data['notify_url'] = 'http://httpbin.org/post';
-$data['source'] = '/deqing/bulesky.mp4';
+$data['source'] = ''; //音视频处理路径
+//处理任务参数
 $tasks = array(
     array(
         'type' => 'video',
         'avopts' => "/s/240p(4:3)/as/1/r/30",
-        'save_as' => '/16/70/92/99bOOOPICa3.mp4',
+        'save_as' => '/upyun/cxiang.mp4',
         'return_info' => true
     )
 );
@@ -40,4 +41,3 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
 $return = curl_exec($ch);
 var_dump($return);
 curl_close($ch);
-
