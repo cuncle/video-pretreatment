@@ -9,7 +9,6 @@ $ch = curl_init();
 $header = array();
 $data = array();
 $data['service'] = $bucket;
-$data['accept'] = 'json';
 $data['notify_url'] = 'http://httpbin.org/post';
 $data['source'] = ''; //音视频处理路径
 //处理任务参数
