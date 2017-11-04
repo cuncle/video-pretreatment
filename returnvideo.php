@@ -3,7 +3,7 @@ $user = '';//操作员
 $password = md5('');//操作员密码
 $bucket = '';//服务名
 $GMTdate = gmdate('D, d M Y H:i:s') . ' GMT';
-$url = 'http://p1.api.upyun.com/'.$bucket.+/snapshot/';
+$url = 'http://p1.api.upyun.com/'.$bucket.'/snapshot/';
 
 $ch = curl_init();
 $data = array();
